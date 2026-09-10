@@ -9,19 +9,18 @@
   </head>
   <body>
     <h1>NaValidade: Um tracker de cozinha</h1>
-    <p>Uma app simples onde podes gerir o stock de produtos da tua cozinha</p>
+    <p>Aqui podes gerir o stock de produtos da tua cozinha e o respetivo prazo de validade.</p>
 
     <div class="search-container">
-      <h2>Pesquisar Produto</h2>
-      <input type="text" placeholder="Pesquisar produtos..." id="searchInput" />
+      <input type="text" placeholder="Pesquisar produto..." id="searchInput" />
       <button onclick="searchProducts()">Pesquisar</button>
     </div>
   
     <div class="add-product-container">
       <h2>Adicionar Produto</h2>
       <form id="addProductForm">
-        <label for="productName">Nome do Produto:</label>
-        <input type="text" id="productName" required />
+        <label for="productName">Nome do Produto: </label>
+        <input type="text"  placeholder="Nome..." id="productName" required />
 
         <label for="productCategory">Categoria:</label>
         <select id="productCategory" required>
@@ -32,7 +31,7 @@
         </select>
 
         <label for="productQuantity">Quantidade:</label>
-        <input type="text" id="productQuantity" required />
+        <input type="text"  placeholder="Existe..." id="productQuantity" required />
 
         <label for="productExpirationDate">Data de Validade:</label>
         <input type="date" id="productExpirationDate" required />
@@ -46,13 +45,22 @@
       <h2>Produtos Secos - Refeições</h2>
       <table>
         <thead>
-          <tr>
             <th>Produto</th>
             <th>Data de Validade</th>
             <th>Quantidade</th>
-          </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>         
+            <td>Arroz Thai</td>
+            <td>31/12/2027</td>
+            <td>1</td>
+          </tr>
+          <tr>         
+            <td>Noodles</td>
+            <td>31/12/2030</td>
+            <td>1</td>
+          </tr>
+        </tbody>
       </table>
     </div>
 
@@ -123,7 +131,7 @@
       </form>
     </div>
   </body>
-  
+
   </html>
   
   

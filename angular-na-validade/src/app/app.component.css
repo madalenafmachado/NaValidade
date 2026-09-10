@@ -1,35 +1,47 @@
 body {
-  background: #4ebaa6;
-  font-family: "Lucida Console", "Courier New", monospace;
+  background: wheat;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   margin: 100px;
   padding: 50px;
   border-radius: 25px;
+  color: #141616;
+  border-style: groove;
 }
 
 div{
   border-radius: 25px;
   border-color: darkslategrey;
-  border-style: dotted;
-  background-color: rgb(235, 235, 134);
-  color: black;
+  border-style: groove;
+  background-color: #c19a6b;
+  color: #2d2a2a;
   padding: 25px;
   margin-top: 50px;
 }
 
 th, td {
   padding: 10px;
+  border-bottom: 1px solid wheat;
 }
 
 table{
-  border-collapse: collapse; 
-  empty-cells: show;
+  text-align: center;
+
 }
+
+tr:hover {background-color: wheat;}
 
 button, input, select{
   border-radius: 25px;
   border-color: black;
-  background-color: #deda95;
-  color: black;
-  padding: 5px;
+  background-color: whitesmoke;
+  color: #141616;
+  padding: 15px;
   margin: 10px;
+}
+
+.search-container{
+  padding: 25px;
+  margin-top: 10px;
+  border-style: none;
+  background-color: wheat;
 }
